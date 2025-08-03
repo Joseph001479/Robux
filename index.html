@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robux Premium | Compre Robux com Segurança</title>
+    <link rel="icon" href="assets/favicon_novo.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+     <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* CSS incorporado para facilitar a visualização inicial */
+        .plan-rating {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+        }
+        .plan-rating .stars {
+            color: #F59E0B;
+            margin-right: 0.25rem;
+        }
+        .plan-rating .reviews {
+            color: #6B7280;
+            font-size: 0.875rem;
+        }
+        .popular-tag {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #F59E0B;
+            color: white;
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            z-index: 3;
+        }
+        .plan-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        @media (max-width: 640px) {
+            .plan-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body class="antialiased font-sans">
+    <!-- Barra de Navegação Premium -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <i class="fas fa-gem text-purple-600 text-2xl mr-2"></i>
+                        <span class="text-xl font-bold text-gray-900">Robux<span class="text-purple-600">Premium</span></span>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-gray-600 hover:text-purple-600 transition-colors">Início</a>
+                    <a href="#planos" class="text-gray-600 hover:text-purple-600 transition-colors">Planos</a>
+                    <a href="#beneficios" class="text-gray-600 hover:text-purple-600 transition-colors">Benefícios</a>
+                    <a href="#contato" class="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-md transition-colors">Contato</a>
+                </div>
+                <button id="mobile-menu-button" class="md:hidden text-gray-600 hover:text-purple-600 focus:outline-none">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Menu Mobile -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+            <div class="container px-4 py-3 space-y-3">
+                <a href="#home" class="block text-gray-600 hover:text-purple-600">Início</a>
+                <a href="#planos" class="block text-gray-600 hover:text-purple-600">Planos</a>
+                <a href="#beneficios" class="block text-gray-600 hover:text-purple-600">Benefícios</a>
+                <a href="#contato" class="block bg-purple-600 text-white px-4 py-2 rounded-md text-center">Contato</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Seção Hero Premium -->
+    <section id="home" class="py-12 md:py-24 bg-gradient-to-b from-white to-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <div class="inline-block px-4 py-2 rounded-full bg-purple-100 text-purple-800 mb-6 animate_animated animate_fadeIn">
+                        <i class="fas fa-shield-alt mr-2"></i>100% Seguro e Confiável
+                    </div>
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6 animate_animated animate_fadeIn">
+                        Compre <span class="text-purple-600">Robux</span> com <br>Segurança e Agilidade
+                    </h1>
+                    <p class="text-lg text-gray-600 mb-8 animate_animated animate_fadeIn">
+                        A forma mais rápida e segura de adquirir Robux para seu Roblox. Entrega instantânea e suporte premium.
+                    </p>
+                    <div class="flex flex-wrap gap-4 animate_animated animate_fadeIn">
+                        <a href="#planos" class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg font-medium flex items-center">
+                            <i class="fas fa-shopping-cart mr-2"></i> Ver Planos
+                        </a>
+                        <a href="#beneficios" class="border border-purple-600 text-purple-600 hover:bg-purple-50 px-6 py-3 rounded-lg font-medium flex items-center">
+                            <i class="fas fa-star mr-2"></i> Benefícios
+                        </a>
+                    </div>
+                    <div class="mt-8 flex flex-wrap items-center gap-4 animate_animated animate_fadeIn">
+    <!-- Imagens dos clientes -->
+    <div class="flex -space-x-2">
+        <img src="assets/menina.png" alt="Cliente" 
+             class="w-10 h-10 rounded-full border-2 border-white object-cover">
+        <img src="assets/hugo.png" alt="Cliente" 
+             class="w-10 h-10 rounded-full border-2 border-white object-cover">
+        <img src="assets/lucas.png" alt="Cliente" 
+             class="w-10 h-10 rounded-full border-2 border-white object-cover">
+    </div>
+
+    <!-- Texto e avaliações -->
+    <div class="flex flex-col justify-center">
+        <p class="text-gray-700 font-medium whitespace-nowrap">
+            +15.000 clientes satisfeitos
+        </p>
+        <div class="flex text-yellow-400 text-sm mt-1">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+    </div>
+</div>
+                </div>
+                <div class="md:w-1/2 animate_animated animate_fadeIn">
+                    <div class="relative">
+                        <img src="assets/BANNER2.jpg" alt="Robux Premium" class="w-full max-w-md mx-auto rounded-lg shadow-xl transform rotate-1">
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Banner de Garantia Premium -->
+    <section class="bg-gradient-to-r from-purple-600 to-blue-500 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p class="font-medium animate_animated animatepulse animate_infinite">
+                <i class="fas fa-check-circle mr-2"></i> GARANTIA DE ENTREGA OU SEU DINHEIRO DE VOLTA!
+            </p>
+        </div>
+    </section>
+
+    <!-- Seção de Planos Premium -->
+    <section id="planos" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4 animate_animated animate_fadeIn">
+                    Nossos Planos Premium
+                </h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto animate_animated animatefadeIn animate_delay-1s">
+                    Escolha o plano perfeito para suas necessidades
+                </p>
+            </div>
+
+            <div class="plan-grid gap-6">
+                <!-- Plano 800 Robux -->
+                <div class="premium-card bg-white rounded-lg p-6 animate_animated animate_fadeInUp">
+                    <div class="reflection-system">
+                        <div class="reflection-layer reflection-primary"></div>
+                        <div class="reflection-layer reflection-overlay"></div>
+                    </div>
+                    <div class="inner-glow"></div>
+                    <div class="text-center mb-6">
+                        <span class="inline-block px-3 py-1 text-sm font-semibold text-gray-700 bg-gray-100 rounded-full">INICIANTE</span>
+                    </div>
+                    <img src="assets/800-min.png" alt="800 Robux" class="plan-image plan-image--small h-auto mb-4">
+                    <h3 class="text-2xl font-bold text-center text-gray-900 mb-2">800 ROBUX</h3>
+                    
+                    <div class="flex justify-center items-end mb-4">
+                        <span class="text-xl line-through text-red-500 mr-2">R$27,90</span>
+                        <span class="text-3xl font-bold text-green-600">R$18,90</span>
+                    </div>
+                    
+                    <div class="plan-rating">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="reviews">(289)</span>
+                    </div>
+                    
+                    <ul class="space-y-3 mb-8 text-gray-600">
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                            <span>Entrega em 10 minutos</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                            <span>Suporte básico</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                            <span>Pagamento seguro</span>
+                        </li>
+                    </ul>
+                    <a href="produtos/800-robux.html"
+                     class="w-full bg-purple-600 hover:bg-purple-700 text-white py-3 px-4 rounded-lg font-medium transition-colors flex justify-center items-center">
+                        Comprar Agora
+                    </a>
+                </div>
+
+                <!-- Plano 1.200 Robux -->
+                <div class="premium-card bg-white rounded-lg p-6 animate_animated animate_fadeInUp">
+                    <div class="reflection-system">
+                        <div class="reflection-layer reflection-primary"></div>
+                        <div class="reflection-layer reflection-overlay"></div>
+                    </div>
+                    <div class="inner-glow"></div>
+                    <div class="text-center mb-6">
+                        <span class="inline-block px-3 py-1 text-sm font-semibold text-gray-700 bg-gray-100 rounded-full">BÁSICO</span>
+                    </div>
+                    <img src="assets/1200-min-1.png" alt="1.200 Robux" class="plan-image plan-image--small h-auto mb-4">
+                    <h3 class="text-2xl font-bold text-center text-gray-900 mb-2">1.200 ROBUX</h3>
+                    
+                    <div class="flex justify-center items-end mb-4">
+                        <span class="text-xl line-through text-red-500 mr-2">R$42,90</span>
+                        <span class="text-3xl font-bold text-green-600">R$27,90</span>
+                    </div>
+                    
+                    <div class="plan-rating">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="reviews">(256)</span>
+                    </div>
+                    
+                    <ul class="space-y-3 mb-8 text-gray-600">
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                            <span>Entrega em 5 minutos</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                            <span>Suporte por e-mail</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                            <span>Pagamento seguro</span>
+                        </li>
+                    </ul>
+                    <a href="produtos/1200-robux.html"
+                     class="w-full bg-purple-600 hover:bg-purple-700 text-white py-3 px-4 rounded-lg font-medium transition-colors flex justify-center items-center">
+                        Comprar Agora
+                    </a>
+                </div>
+
+                <!-- Plano 1.700 Robux -->
+                <div class="premium-card bg-white rounded-lg p-6 animate_animated animatefadeInUp animate_delay-1s">
+                    <div class="reflection-system">
+                        <div class="reflection-layer reflection-primary"></div>
+                        <div class="reflection-layer reflection-overlay"></div>
+                    </div>
+                    <div class="inner-glow"></div>
+                    <div class="text-center mb-6">
+                        <span class="inline-block px-3 py-1 text-sm font-semibold text-gray-700 bg-gray-100 rounded-full">INTERMEDIÁRIO</span>
+                    </div>
+                    <img src="assets/1700-min.png" alt="1.700 Robux" class="plan-image plan-image--small h-auto mb-4">
+                    <h3 class="text-2xl font-bold text-center text-gray-900 mb-2">1.700 ROBUX</h3>
+                    
+                    <div class="flex justify-center items-end mb-4">
+                        <span class="text-xl line-through text-red-500 mr-2">R$62,90</span>
+                        <span class="text-3xl font-bold text-green-600">R$44,90</span>
+                    </div>
+                    
+                    <div class="plan-rating">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="reviews">(312)</span>
+                    </div>
+                    
+                    <ul class="space-y-3 mb-8 text-gray-600">
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                            <span>Entrega em 3 minutos</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                            <span>+50 Robux de bônus</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                            <span>Suporte prioritário</span>
+                        </li>
+                    </ul>
+                    <a href="produtos/1700-robux.html"
+                     class="w-full bg-purple-600 hover:bg-purple-700 text-white py-3 px-4 rounded-lg font-medium transition-colors flex justify-center items-center">
+                        Comprar Agora
+                    </a>
+                </div>
+
+                <!-- Plano 2.100 Robux (Popular) -->
+                <div class="premium-card bg-white rounded-lg p-6 relative animate_animated animatefadeInUp animate_delay-2s">
+                    <div class="popular-tag">POPULAR</div>
+                    <div class="reflection-system">
+                        <div class="reflection-layer reflection-primary"></div>
+                        <div class="reflection-layer reflection-overlay"></div>
+                    </div>
+                    <div class="inner-glow"></div>
+                    <div class="text-center mb-6">
+                        <span class="inline-block px-3 py-1 text-sm font-semibold text-white bg-purple-600 rounded-full">MELHOR CUSTO-BENEFÍCIO</span>
+                    </div>
+                    <img src="assets/2100-min.png" alt="2.100 Robux" class="plan-image plan-image--small h-auto mb-4">
+                    <h3 class="text-2xl font-bold text-center text-gray-900 mb-2">2.100 ROBUX</h3>
+                    
+                    <div class="flex justify-center items-end mb-4">
+                        <span class="text-xl line-through text-red-500 mr-2">R$79,90</span>
+                        <span class="text-3xl font-bold text-green-600">R$58,90</span>
+                    </div>
+                    
+                    <div class="plan-rating">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="reviews">(428)</span>
+                    </div>
+                    
+                    <ul class="space-y-3 mb-8 text-gray-600">
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                            <span>Entrega em 2 minutos</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                            <span>+100 Robux de bônus</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                            <span>Item exclusivo</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                            <span>Suporte VIP</span>
+                        </li>
+                    </ul>
+                    <a href="produtos/2100-robux.html"
+                     class="w-full bg-purple-600 hover:bg-purple-700 text-white py-3 px-4 rounded-lg font-medium transition-colors flex justify-center items-center">
+                        Comprar Agora
+                    </a>
+                </div>
+
+                <!-- Plano 3.600 Robux -->
+                <div class="premium-card bg-white rounded-lg p-6 animate_animated animatefadeInUp animate_delay-3s">
+                    <div class="reflection-system">
+                        <div class="reflection-layer reflection-primary"></div>
+                        <div class="reflection-layer reflection-overlay"></div>
+                    </div>
+                    <div class="inner-glow"></div>
+                    <div class="text-center mb-6">
+                        <span class="inline-block px-3 py-1 text-sm font-semibold text-gray-700 bg-gray-100 rounded-full">AVANÇADO</span>
+                    </div>
+                    <img src="assets/3600-min.png" alt="3.600 Robux" class="plan-image plan-image--small h-auto mb-4">
+                    <h3 class="text-2xl font-bold text-center text-gray-900 mb-2">3.600 ROBUX</h3>
+                    
+                    <div class="flex justify-center items-end mb-4">
+                        <span class="text-xl line-through text-red-500 mr-2">R$133,90</span>
+                        <span class="text-3xl font-bold text-green-600">R$99,90</span>
+                    </div>
+                    
+                    <div class="plan-rating">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="reviews">(376)</span>
+                    </div>
+                    
+                    <ul class="space-y-3 mb-8 text-gray-600">
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                            <span>Entrega imediata</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                            <span>+200 Robux de bônus</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                            <span>2 itens exclusivos</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                            <span>Suporte 24/7</span>
+                        </li>
+                    </ul>
+                    <a href="produtos/3600-robux.html"
+                     class="w-full bg-purple-600 hover:bg-purple-700 text-white py-3 px-4 rounded-lg font-medium transition-colors flex justify-center items-center">
+                        Comprar Agora
+                    </a>
+                </div>
+
+                <!-- Plano 4.500 Robux -->
+                <div class="premium-card bg-white rounded-lg p-6 animate_animated animate_fadeInUp">
+                    <div class="reflection-system">
+                        <div class="reflection-layer reflection-primary"></div>
+                        <div class="reflection-layer reflection-overlay"></div>
+                    </div>
+                    <div class="inner-glow"></div>
+                    <div class="text-center mb-6">
+                        <span class="inline-block px-3 py-1 text-sm font-semibold text-gray-700 bg-gray-100 rounded-full">PREMIUM</span>
+                    </div>
+                    <img src="assets/4500-min.png" alt="4.500 Robux" class="plan-image plan-image--small h-auto mb-4">
+                    <h3 class="text-2xl font-bold text-center text-gray-900 mb-2">4.500 ROBUX</h3>
+
+                    <div class="flex justify-center items-end mb-4">
+                        <span class="text-xl line-through text-red-500 mr-2">R$159,90</span>
+                        <span class="text-3xl font-bold text-green-600">R$128,90</span>
+                    </div>
+                    
+                    <div class="plan-rating">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="reviews">(412)</span>
+                    </div>
+                    
+                    <ul class="space-y-3 mb-8 text-gray-600">
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                            <span>Entrega imediata</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                            <span>+500 Robux de bônus</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                            <span>3 itens exclusivos</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                            <span>Suporte 24/7 VIP</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                            <span>Desconto em futuras compras</span>
+                        </li>
+                    </ul>
+                    <a href="produtos/4500-robux.html"
+                     class="w-full bg-purple-600 hover:bg-purple-700 text-white py-3 px-4 rounded-lg font-medium transition-colors flex justify-center items-center">
+                        Comprar Agora
+                    </a>
+                </div>
+
+                <!-- Plano 7.000 Robux -->
+<div class="premium-card bg-white rounded-lg p-6 animate_animated animatefadeInUp animate_delay-1s">
+    <div class="reflection-system">
+        <div class="reflection-layer reflection-primary"></div>
+        <div class="reflection-layer reflection-overlay"></div>
+    </div>
+    
+    <div class="inner-glow"></div>
+    
+    <div class="text-center mb-6">
+        <span class="inline-block px-3 py-1 text-sm font-semibold text-white bg-purple-600 rounded-full">SUPER</span>
+    </div>
+    
+    <img src="assets/7000-min.png" alt="7.000 Robux" class="plan-image plan-image--small h-auto mb-4">
+    
+    <h3 class="text-2xl font-bold text-center text-gray-900 mb-2">7.000 ROBUX</h3>
+
+    <div class="flex justify-center items-end mb-4">
+        <span class="text-xl line-through text-red-500 mr-2">R$249,90</span>
+        <span class="text-3xl font-bold text-green-600">R$199,90</span>
+    </div>
+    
+    <div class="plan-rating">
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+        <span class="reviews">(298)</span>
+    </div>
+    
+    <ul class="space-y-3 mb-8 text-gray-600">
+        <li class="flex items-center">
+            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+            <span>Entrega imediata</span>
+        </li>
+        <li class="flex items-center">
+            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+            <span>+750 Robux de bônus</span>
+        </li>
+        <li class="flex items-center">
+            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+            <span>5 itens exclusivos</span>
+        </li>
+        <li class="flex items-center">
+            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+            <span>Suporte 24/7 VIP</span>
+        </li>
+        <li class="flex items-center">
+            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+            <span>Desconto de 10% em futuras compras</span>
+        </li>
+    </ul>
+     <a href="produtos/7000-robux.html" 
+       class="w-full bg-purple-600 hover:bg-purple-700 text-white py-3 px-4 rounded-lg font-medium transition-colors flex justify-center items-center">
+       Comprar Agora
+    </a>
+</div>
+
+                <!-- Plano 10.000 Robux -->
+<div class="premium-card bg-white rounded-lg p-6 animate_animated animatefadeInUp animate_delay-2s">
+    <div class="reflection-system">
+        <div class="reflection-layer reflection-primary"></div>
+        <div class="reflection-layer reflection-overlay"></div>
+    </div>
+    <div class="inner-glow"></div>
+    <div class="text-center mb-6">
+        <span class="inline-block px-3 py-1 text-sm font-semibold text-white bg-purple-600 rounded-full">MEGA</span>
+    </div>
+    <img src="assets/10000-min.png" alt="10.000 Robux" class="plan-image plan-image--small h-auto mb-4">
+    <h3 class="text-2xl font-bold text-center text-gray-900 mb-2">10.000 ROBUX</h3>
+
+    <div class="flex justify-center items-end mb-4">
+        <span class="text-xl line-through text-red-500 mr-2">R$349,90</span>
+        <span class="text-3xl font-bold text-green-600">R$299,90</span>
+    </div>
+    
+    <div class="plan-rating">
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+        <span class="reviews">(231)</span>
+    </div>
+    
+    <ul class="space-y-3 mb-8 text-gray-600">
+        <li class="flex items-center">
+            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+            <span>Entrega imediata</span>
+        </li>
+        <li class="flex items-center">
+            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+            <span>+1.000 Robux de bônus</span>
+        </li>
+        <li class="flex items-center">
+            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+            <span>7 itens exclusivos</span>
+        </li>
+        <li class="flex items-center">
+            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+            <span>Suporte 24/7 VIP</span>
+        </li>
+        <li class="flex items-center">
+            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+            <span>Desconto de 15% em futuras compras</span>
+        </li>
+    </ul>
+    <a 
+        href="produtos/10000-robux.html" 
+        class="w-full bg-purple-600 hover:bg-purple-700 text-white py-3 px-4 rounded-lg font-medium transition-colors flex justify-center items-center">
+        Comprar Agora
+    </a>
+</div>
+    </section>
+    <!-- Seção de Benefícios Premium -->
+    <section id="beneficios" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4 animate_animated animate_fadeIn">
+                    Por Que Escolher Nosso Serviço?
+                </h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto animate_animated animatefadeIn animate_delay-1s">
+                    Oferecemos a melhor experiência para compra de Robux
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="premium-card bg-white p-6 rounded-lg animate_animated animate_fadeIn">
+                    <div class="reflection-system">
+                        <div class="reflection-layer reflection-primary"></div>
+                        <div class="reflection-layer reflection-overlay"></div>
+                    </div>
+                    <div class="inner-glow"></div>
+                    <div class="bg-purple-100 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-bolt text-purple-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Entrega Instantânea</h3>
+                    <p class="text-gray-600">Seus Robux são creditados em poucos minutos após a confirmação do pagamento.</p>
+                </div>
+                <div class="premium-card bg-white p-6 rounded-lg animate_animated animatefadeIn animate_delay-1s">
+                    <div class="reflection-system">
+                        <div class="reflection-layer reflection-primary"></div>
+                        <div class="reflection-layer reflection-overlay"></div>
+                    </div>
+                    <div class="inner-glow"></div>
+                    <div class="bg-purple-100 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-shield-alt text-purple-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">100% Seguro</h3>
+                    <p class="text-gray-600">Processamos seus pagamentos com criptografia avançada e não armazenamos dados sensíveis.</p>
+                </div>
+                <div class="premium-card bg-white p-6 rounded-lg animate_animated animatefadeIn animate_delay-2s">
+                    <div class="reflection-system">
+                        <div class="reflection-layer reflection-primary"></div>
+                        <div class="reflection-layer reflection-overlay"></div>
+                    </div>
+                    <div class="inner-glow"></div>
+                    <div class="bg-purple-100 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-headset text-purple-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Suporte Premium</h3>
+                    <p class="text-gray-600">Nossa equipe está disponível 24/7 para resolver qualquer dúvida ou problema.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">O Que Nossos Clientes Dizem</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Mais de 15.000 jogadores já compraram conosco</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="premium-card bg-gray-50 p-6 rounded-lg animate_animated animate_fadeIn">
+                    <div class="reflection-system">
+                        <div class="reflection-layer reflection-primary"></div>
+                        <div class="reflection-layer reflection-overlay"></div>
+                    </div>
+                    <div class="inner-glow"></div>
+                    <div class="flex items-center mb-4">
+                        <img src="assets/pedro.png" alt="Cliente" class="w-12 h-12 rounded-full">
+                        <div class="ml-4">
+                            <h4 class="font-semibold text-gray-900">João, 19 anos</h4>
+                            <div class="flex text-yellow-400 text-sm">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Comprei Robux pela primeira vez e deu tudo certo! Recebi em 3 minutos e o suporte me ajudou quando tive dúvidas."</p>
+                </div>
+                <div class="premium-card bg-gray-50 p-6 rounded-lg animate_animated animatefadeIn animate_delay-1s">
+                    <div class="reflection-system">
+                        <div class="reflection-layer reflection-primary"></div>
+                        <div class="reflection-layer reflection-overlay"></div>
+                    </div>
+                    <div class="inner-glow"></div>
+                    <div class="flex items-center mb-4">
+                        <img src="assets/Antonela Braga.png" alt="Cliente" class="w-12 h-12 rounded-full">
+                        <div class="ml-4">
+                            <h4 class="font-semibold text-gray-900">Maria, 23 anos</h4>
+                            <div class="flex text-yellow-400 text-sm">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Adorei o bônus do plano premium! Meus amigos também compraram aqui depois que mostrei como foi fácil."</p>
+                </div>
+                <div class="premium-card bg-gray-50 p-6 rounded-lg animate_animated animatefadeIn animate_delay-2s">
+                    <div class="reflection-system">
+                        <div class="reflection-layer reflection-primary"></div>
+                        <div class="reflection-layer reflection-overlay"></div>
+                    </div>
+                    <div class="inner-glow"></div>
+                    <div class="flex items-center mb-4">
+                        <img src="assets/criança.png" alt="Cliente" class="w-12 h-12 rounded-full">
+                        <div class="ml-4">
+                            <h4 class="font-semibold text-gray-900">Pedro, 20 anos</h4>
+                            <div class="flex text-yellow-400 text-sm">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Minha mãe ficou com medo no começo, mas depois que mostrei o site e os certificados, ela deixou eu comprar de novo!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section class="py-16 bg-gradient-to-r from-purple-600 to-blue-500 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6 animate_animated animate_fadeIn">Pronto para Comprar Seus Robux?</h2>
+            <p class="text-xl mb-8 animate_animated animate_fadeIn">Escolha seu plano e receba em minutos com total segurança.</p>
+            <div class="flex flex-wrap justify-center gap-4 animate_animated animate_fadeIn">
+                <a href="#planos" class="bg-white text-purple-600 hover:bg-gray-100 px-8 py-3 rounded-lg font-bold flex items-center transition-colors">
+                    <i class="fas fa-shopping-cart mr-2"></i> Ver Planos
+                </a>
+                <a href="#contato" class="border-2 border-white text-white hover:bg-white hover:text-purple-600 px-8 py-3 rounded-lg font-bold flex items-center transition-colors">
+                    <i class="fas fa-headset mr-2"></i> Falar com Suporte
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé Premium -->
+    <footer id="contato" class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-gem text-purple-400 text-2xl mr-2"></i>
+                        <span class="text-xl font-bold">Robux<span class="text-purple-400">Premium</span></span>
+                    </div>
+                    <p class="text-gray-400 text-sm">A forma mais segura e rápida para comprar Robux online.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 text-white">Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-purple-400 transition-colors">Início</a></li>
+                        <li><a href="#planos" class="text-gray-400 hover:text-purple-400 transition-colors">Planos</a></li>
+                        <li><a href="#beneficios" class="text-gray-400 hover:text-purple-400 transition-colors">Benefícios</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 text-white">Informações</h4>
+                    <ul class="space-y-2">
+                        <li><a href="termos/termos.html" class="text-gray-400 hover:text-purple-400 transition-colors">Termos de Serviço</a></li>
+                        <li><a href="politica/privacidade.html" class="text-gray-400 hover:text-purple-400 transition-colors">Política de Privacidade</a></li>
+                        <li><a href="garantia/garantia.html" class="text-gray-400 hover:text-purple-400 transition-colors">Garantia</a></li>
+                        <li><a href="faq/faq.html" class="text-gray-400 hover:text-purple-400 transition-colors">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 text-white">Contato</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope text-purple-400 mr-2"></i>
+                            <span class="text-gray-400">contato@robuxpremium.com</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-headset text-purple-400 mr-2"></i>
+                            <span class="text-gray-400">Suporte 24/7</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500 text-sm">
+                <p>© 2023 RobuxPremium. Não afiliado à Roblox Corporation.</p>
+                <p class="mt-2">RobuxPremium é um serviço de entrega de itens virtuais dentro do jogo Roblox.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // JavaScript para o menu mobile
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+        
+        // Fechar menu ao clicar em um link
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        });
+        
+        // Smooth scrolling para links âncora
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
